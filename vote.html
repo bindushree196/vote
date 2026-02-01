@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Validator</title>
+    <link rel="stylesheet" href="vote.css">
+</head>
+<body>
+    <nav>
+    <h1 style="color: rgb(8, 34, 231)" text-align=center>VOTE VALIDATOR</h1>
+    <input type="text" id="name" text-align=center placeholder="Enter your name">
+    <input type="number" id="age" text-align=center placeholder="Age">
+    <button onclick="vote()">Submit</button>
+    <h2><p id="ans">You can get your answer here</p></h2>
+    </nav>
+    <script>
+        function vote() {
+            var name = document.getElementById("name").value;
+            var age = Number(document.getElementById("age").value);
+            var ans = document.getElementById("ans");
+
+            if (age >= 18) {
+                ans.innerHTML = name + ", you are eligible to vote ✅";
+            } else {
+                ans.innerHTML = name + ", you are still a child 👶";
+            }
+        }
+    </script>
+    <style>
+     p{
+        color:rgba(1, 22, 3, 0.926);
+     }
+    </style>
+    <script src="vote.css"></script> 
+</body>
+</html>

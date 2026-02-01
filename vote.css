@@ -1,0 +1,14 @@
+nav{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+header h1{
+    text-align: center;
+}
+body{
+    background-color: lightblue;
+    color:ghostwhite;
+}   
